@@ -6,12 +6,12 @@ const App = () => {
     <div>
       <div>
         <Navbar />
-        {/* <Hero />
+        <Hero />
         <FeaturesSection />
         <TestimonialSection />
         <AppSection />
         <NewsletterSection />
-        <Footer /> */}
+        <Footer />
     </div>
     </div>
   )

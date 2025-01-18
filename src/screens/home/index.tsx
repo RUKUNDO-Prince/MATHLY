@@ -20,17 +20,17 @@ const Home = () => {
 
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
-
-    if (!canvas) {
-      canvas.style.background = "black";
+  
+    if (canvas) {
       const ctx = canvas.getContext("2d");
       if (ctx) {
+        canvas.style.background = "black"; // Apply the background here
         ctx.beginPath();
         ctx.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
         setIsDrawing(true);
       }
     }
-  };
+  };  
 
   const stopDrawing = () => {
     setIsDrawing(false);
